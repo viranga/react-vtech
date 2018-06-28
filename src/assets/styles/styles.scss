@@ -1,0 +1,23 @@
+// rubix
+@import "./rubix/main";
+
+// base
+@import "./base";
+@import "./mixins";
+
+//partials
+@import "./pages/home";
+@import "./partials/common/header";
+@import "./partials/common/sidebar";
+@import "./partials/common/main-body";
+@import "./partials/login";
+
+//pages
+@import "./pages/dashboard";
+@import "./pages/select-shop";
+@import "./pages/car-owners";
+@import "./pages/profile";
+@import "./pages/notifications";
+@import "./pages/vehicles";
+@import "./pages/history";
+@import "./pages/appointments";

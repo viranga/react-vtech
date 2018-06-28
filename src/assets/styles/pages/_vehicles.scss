@@ -1,0 +1,116 @@
+.vehicle-modal{
+
+    .modal-header{
+        position: relative;
+
+        .cross-icon{
+            position: absolute;
+            top: 8px;
+            right: 6px;
+            cursor: pointer;
+        }
+
+    }
+
+    .modal-body{
+
+        .body-header{
+            margin-bottom: 40px;
+
+            .number{
+                color: #74cb80;
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+
+        }
+
+        .main-block-wrapper{
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .block-wrapper{
+            overflow: hidden;
+            padding: 0;
+
+            .block-icon{
+                width: 37px;
+                height: 30px;
+                float: left;
+
+                &.small-icon{
+                    width: 28px;
+                    height: 29px;
+                }
+
+                &.brand{
+                    background: url(../images/icons/brand-icon.png) no-repeat;
+                }
+
+                &.model{
+                    background: url(../images/icons/model-icon.png) no-repeat;
+                }
+
+                &.year{
+                    background: url(../images/icons/manufacture-year-icon.png) no-repeat;
+                }
+
+                &.mileage{
+                    background: url(../images/icons/mileage-icon.png) no-repeat;
+                }
+
+                &.manu-date{
+                    background: url(../images/icons/manufacture-date-icon.png) no-repeat;
+                }
+                
+                &.last-in-date{
+                    background: url(../images/icons/last-date-icon.png) no-repeat;
+                }
+
+                &.inspect-date{
+                    background: url(../images/icons/inspection-date.png) no-repeat;
+                }
+                
+            }
+
+            .block-cont{
+                float: left;
+                margin-left: 15px;
+
+                .block-title{
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    line-height: 1;
+                    margin: 0 0 5px;
+                }
+
+                .block-text{
+                    font-size: 18px;
+                    margin: 0;
+                    line-height: 1;
+                }
+
+            }
+
+        }
+
+        .inner-block-wrapper{
+            overflow: hidden;
+            background: #f6f6f6;
+            padding: 32px 25px;
+
+            .block-wrapper{
+                margin-bottom: 35px;
+
+                &:last-child{
+                    margin: 0;
+                }
+            }
+
+        }
+
+    }
+
+}

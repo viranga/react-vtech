@@ -1,0 +1,56 @@
+.appointment-list-holder{
+    
+    .date-holder{
+        color: $green;
+
+        .month{
+            font-size: 18px;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 2px;
+        }
+
+        .date{
+            font-size: 34px;
+            line-height: 1;
+        }
+
+    }
+
+    .client{
+        color: $green;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .desc-footer{        
+        color: $green;
+        
+        .time{
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .glyphicon{
+            margin-right: 5px;
+            font-size: 13px;
+        }
+
+    }
+
+    .form-group{
+
+        textarea{
+            resize: none;
+            border: solid 0.5px #e6e6e6;
+            border-radius: 2px;
+        }
+
+    }
+
+    button{
+        background: $green;
+        border: none;
+    }
+
+}

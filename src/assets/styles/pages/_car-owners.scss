@@ -1,0 +1,28 @@
+.car-owner-list-holder{
+    padding-top: 25px;
+
+    table{
+        font-size: 14px;
+
+        thead{
+
+            tr{
+                background: #2eb398;
+
+                th{
+                    color: #ffffff;
+                }
+
+            }
+
+        }
+
+        td{
+            &:last-child{
+                text-align: center;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,300 @@
+.dashboard-holder{
+
+    .dashboard-header{
+        position: relative;
+        min-height: 360px;
+
+        .banner-holder{
+            background-size: cover;
+            width: auto;
+            height: 360px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .shop-name-wrapper{
+            position: absolute;
+            top: 66px;
+            left: 31px;
+
+            .shop-title{
+                font-weight: 700;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 62px;
+                text-shadow: 1px 3px 8px #111;
+            }
+
+            .shop-address{
+                font-size: 24px;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-shadow: 1px 3px 8px #111;
+            }
+            
+            @include tablet {
+                .shop-title{
+                    font-size: 35px;
+                }
+    
+                .shop-address{
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .shop-bio{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(0,0,0,0.47);
+            padding: 30px 20px;
+            text-align: center;
+            height: 100%;
+
+            .logo-holder{
+                max-width: 104px;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+
+            .shop-branding,
+            .shop-registration{
+                color: #ffffff;
+                font-size: 20px;
+                text-transform: capitalize;
+                line-height: 1;
+                margin-bottom: 8px;
+            }
+
+            .shop-registration{
+                font-size: 16px;
+                margin: 0;
+            }
+
+            .social-icons{
+                margin-top: 18px;
+                border-bottom: 1px solid rgba(255,255,255,0.5);
+                padding-bottom: 5px;
+
+                .icon{
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 7px;
+
+                    &.google{
+                        background: url(../images/icons/gPlus.png);
+                    }
+                    &.fb{
+                        background: url(../images/icons/fb.png);
+                    }
+                    &.twitter{
+                        background: url(../images/icons/twitter.png);
+                    }
+                    &.insta{
+                        background: url(../images/icons/instagram.png);
+                    }
+
+                }
+            }
+
+            .btn{
+                margin-top: 20px;
+            }
+
+        }
+
+    }
+
+    .dashboard-container{
+        padding-top: 25px;
+
+        .shop-details{
+            
+            .container-inner{
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                padding: 18px;
+
+                .stats-holder{
+                    overflow: hidden;
+
+                    .stats{
+                        padding-left: 0;
+
+                        .inner-holder{
+                            border: 1px solid #aae0d5;
+                            border-radius: 5px;
+                            padding: 8px;
+                            text-align: center;
+                        }
+
+                        .stats-icon{
+                            display: inline-block;
+                            margin-bottom: 10px;
+                            width: 41px;
+                            height: 48px;
+
+                            &.clients-icon{
+                                background: url(../images/icons/users.png);
+                            }
+
+                            &.vehicles-icon{
+                                background: url(../images/icons/cars.png);
+                            }
+
+                            &.shops-icon{
+                                background: url(../images/icons/shops.png);
+                            }
+
+                        }
+
+                        .stat-title{
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            color: #000000;
+                            font-weight: 500;
+                            margin-bottom: 8px;
+                            line-height: 1;
+                        }
+
+                        .stat-number{
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            color: #000000;
+                            font-weight: 700;
+                            line-height: 1;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+        .shop-info-sidebar{
+            
+            .container-inner{
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                padding: 10px;
+
+                p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #000000;
+                    position: relative;
+                    padding-left: 20px;
+
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                    }
+                }
+
+                .sidebar-title{
+                    color: #000000;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    line-height: 1;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #e6e6e6;
+                    padding-left: 23px;
+
+                    &:before{
+                        width: 16px;
+                        height: 16px;
+                        background: url(../images/icons/sidebar-info-icon.png);
+                    }
+                }                
+
+                .sidebar-info-title{
+                    margin-top: 18px;                    
+
+                    &:before{
+                        width: 16px;
+                        height: 14px;
+                        background: url(../images/icons/sidebar-shop-icon.png);
+                    }
+                }
+                
+                .sidebar-info-tel{                  
+
+                    &:before{
+                        width: 10px;
+                        height: 16px;
+                        background: url(../images/icons/sidebar-tel-icon.png);
+                    }
+
+                }
+                
+                .sidebar-info-fax{                  
+
+                    &:before{
+                        width: 15px;
+                        height: 15px;
+                        background: url(../images/icons/sidebar-fax-icon.png);
+                    }
+
+                }
+                
+                .sidebar-info-email{                  
+
+                    &:before{
+                        width: 13px;
+                        height: 10px;
+                        background: url(../images/icons/sidebar-email-icon.png);
+                    }
+
+                }
+                
+                .sidebar-info-address{                  
+
+                    &:before{
+                        width: 12px;
+                        height: 17px;
+                        background: url(../images/icons/sidebar-loc-icon.png);
+                    }
+
+                }
+
+                .contact-wrapper,
+                .email-wrapper,
+                .time-wrapper,
+                .sidebar-info-address{
+                    margin-top: 25px;
+                }
+                
+                .time-wrapper{
+                    overflow: hidden;
+
+                    .sidebar-info-days{
+                        float: left;
+                        margin-right: 8%;
+                        width: 50%;
+
+                        &:before{
+                            width: 14px;
+                            height: 14px;
+                            background: url(../images/icons/sidebar-cal-icon.png);
+                        }
+                    }
+
+                    .sidebar-info-time{
+                        float: left;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

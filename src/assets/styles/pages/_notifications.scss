@@ -1,0 +1,30 @@
+.notification-holder{
+    padding-top: 25px;
+
+    .input{
+        height: 35px;
+    }
+    
+    textarea{
+        height: 200px;
+        resize: none;
+    }
+
+    .user-table-wrapper{
+        height: auto;
+        min-height: 100px;
+        max-height: 260px;
+        overflow-y: scroll;
+
+        .checkbox{
+            margin-top: 0;
+            cursor: pointer;
+        }
+        
+    }
+
+    .btn-holder{
+        text-align: right;
+    }
+
+}

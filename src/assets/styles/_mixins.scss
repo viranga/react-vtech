@@ -1,0 +1,18 @@
+// mixins
+   
+// media query
+$tablet-width  : 768px;
+$desktop-width : 1024px;
+$desktop-large-width : 1280px;
+
+@mixin small-desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-large-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}

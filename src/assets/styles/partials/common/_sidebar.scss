@@ -1,0 +1,49 @@
+.sidebar-holder{
+    background: #273135 !important;
+
+    #avatar{
+        background: #2eb398 !important;
+        cursor: pointer;
+    }
+
+    #sidebar-container{
+
+        .navItem{
+            display: block;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-weight: 300;
+            position: relative;
+
+            &.active-link{
+                background: #1e2629;
+
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 3px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #2eb398;
+                }
+                
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 14px;
+                    position: absolute;
+                    top: 12px;
+                    right: 0;
+                    background: url(../images/icons/nav-right-arrow.png) no-repeat;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,87 @@
+.profile-holder{
+    padding-top: 25px;
+
+    .container-inner{
+        border-radius: 5px;
+        border: 1px solid #efefef;
+        overflow: hidden;
+
+        .profile-form-header{
+            padding: 20px 15px;            
+            background: #56b495;
+
+            .form-title{
+                text-transform: capitalize;
+                color: #ffffff;
+                font-size: 16px;
+
+                small{
+                    color: #ffffff;
+                }
+            }
+
+        }
+
+        .profile-form-body{
+            padding: 10px 15px;
+
+            .address-wrapper{
+                margin-bottom: 10px;
+            }
+
+            label{
+                font-size: 12px;
+            }
+
+            input{
+                font-size: 12px;
+            }
+            
+        }
+
+        .dropZone{
+            padding: 27px 20px 37px;
+            text-align: center;
+            cursor: pointer;
+            min-height: 230px;
+
+            img{
+                max-width: 157px;
+                display: inline-block;
+            }
+
+            .upload-tag{
+                font-size: 12px;
+                line-height: 1.2;
+                margin: 15px 0 0;
+            }
+
+        }
+
+        .btn-holder{
+            background: #56b495;
+            padding: 12px 20px;
+            border-radius: 0 0 5px 5px;
+            text-align: right;
+
+            .btn{
+                display: inline-block;
+                background: transparent;
+                color: #ffffff;
+                border: 1px solid #fff;
+                margin-right: 10px;
+
+                &:last-child{
+                    margin: 0;
+                }
+
+            }
+        }
+
+    }
+
+    .upload-holder{
+        margin-bottom: 22px;
+    }
+
+}

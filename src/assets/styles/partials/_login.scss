@@ -1,0 +1,128 @@
+.login-holder{
+
+  .input-holder{
+    margin-bottom: 20px;
+
+    .icon{
+      display: block;
+      width: 18%;
+      height: 35px;
+      border-radius: 5px;
+
+      &.email-icon{
+        background: url("../images/icons/email-icon.png") no-repeat center center $green;
+      }
+
+      &.pass-icon{
+        background: url("../images/icons/pass-icon.png") no-repeat center center $btn-grey;
+      }
+
+      &.token-icon{
+        background: url("../images/icons/token-icon.png") no-repeat center center $btn-grey;
+      }
+
+    }
+
+    .form-control{
+      width: 80%;
+      height: 35px;
+      background: transparent;
+
+      border-radius: 5px !important;
+
+      &.green-box{
+        border: 1px solid $green-border;
+      }
+
+      &.grey-box{
+        border: 1px solid $grey-border;
+      }
+
+    }
+  }
+
+  .bold-text {
+    font-weight:$bold ;
+    color: $black;
+    font-size: small;
+    font-family: Lato, sans-serif;
+  }
+
+  .normal-text-div {
+    color: $black;
+    font-size: smaller;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  .privacy-text-div {
+    color: $black;
+    font-size: smaller;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .btn-login {
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-image: none;
+    background-color: $green;
+    color: #ffffff;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    //padding: 2px 15px;
+    font-size: 12px;
+    line-height: 1.78571;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .btn-register {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid $green-border;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.78571;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    color: $green;
+  }
+}
