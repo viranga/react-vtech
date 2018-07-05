@@ -46,8 +46,7 @@ export const userLoginSuccess = (data) => {
     }
 
     return dispatch => {        
-        dispatch(history.push("/dashboard"));
-        
+        dispatch(history.push("/dashboard"));        
     }
   }
   

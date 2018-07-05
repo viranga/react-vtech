@@ -15,7 +15,7 @@ import {
   AppSidebarNav,
 } from '@coreui/react';
 // sidebar nav config
-import navigation from '../../_nav';
+import navigation from '../_nav';
 // routes config
 import routes from '../../routes';
 import DefaultAside from './DefaultAside';
@@ -33,7 +33,7 @@ class DefaultLayout extends Component {
           <AppSidebar fixed display="lg">
             <AppSidebarHeader />
             <AppSidebarForm />
-            <AppSidebarNav navConfig={navigation} {...this.props} />
+            {/*<AppSidebarNav navConfig={navigation} {...this.props} />*/}
             <AppSidebarFooter />
             <AppSidebarMinimizer />
           </AppSidebar>
