@@ -3,7 +3,7 @@ import { push } from 'react-router-redux';
 import { withRouter, NavLink } from "react-router-dom";
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Alert, Button, Card, CardBody, CardGroup, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';    
+import { Button, Card, CardBody, CardFooter, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
 class Register extends React.Component{
     constructor(props){
@@ -16,30 +16,56 @@ class Register extends React.Component{
                 email: "",
                 pass: "",
             },
-            isEmailValid: true,
-            isPassValid: true,
+            submitted: false
+
+            // isEmailValid: true,
+            // isPassValid: true,
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    // handleEmail(value){
+    //     let {user} = this.state;
+    //
+    //     user.email = value;
+    //
+    //     this.setState({user});
+    // }
+    //
+    // handlePassword(value){
+    //     let {user} = this.state;
+    //
+    //     user.pass = value;
+    //
+    //     this.setState({user});
+    // }
+    handleChange(event) {
+        const { name, value } = event.target;
+        const { user } = this.state;
+        this.setState({
+            user: {
+                ...user,
+                [name]: value
+            }
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        this.setState({ submitted: true });
+        const { user } = this.state;
+        const { dispatch } = this.props;
+        if (user.firstName && user.lastName && user.username && user.password) {
+            dispatch(userActions.register(user));
         }
     }
 
-    handleEmail(value){
-        let {user} = this.state;
-
-        user.email = value;
-
-        this.setState({user});
-    }
-    
-    handlePassword(value){
-        let {user} = this.state;
-
-        user.pass = value;
-
-        this.setState({user});
-    }
-
     render(){
-        let {userLogin, isLoading, userData, isLoginFail} = this.props;
-        let {user, isEmailValid, isPassValid} = this.state;
+        const { registering  } = this.props;
+        const { user, submitted } = this.state;
 
         return(
         <Col md="6">
@@ -54,6 +80,10 @@ class Register extends React.Component{
                             </InputGroupText>
                         </InputGroupAddon>
                         <Input type="text" placeholder="Username" />
+                        <input type="text" className="form-control" name="firstName" placeholder="First Name" value={user.firstName} onChange={this.handleChange} />
+                        {submitted && !user.firstName &&
+                        <div className="help-block">First Name is required</div>
+                        }
                     </InputGroup>
                     <InputGroup className="mb-3">
                         <InputGroupAddon addonType="prepend">
@@ -79,16 +109,16 @@ class Register extends React.Component{
                     </InputGroup>
                     <Button color="success" block>Create Account</Button>
                 </CardBody>
-                <CardFooter className="p-4">
-                    <Row>
-                        <Col xs="12" sm="6">
-                            <Button className="btn-facebook" block><span>facebook</span></Button>
-                        </Col>
-                        <Col xs="12" sm="6">
-                            <Button className="btn-twitter" block><span>twitter</span></Button>
-                        </Col>
-                    </Row>
-                </CardFooter>
+                {/*<CardFooter className="p-4">*/}
+                    {/*<Row>*/}
+                        {/*<Col xs="12" sm="6">*/}
+                            {/*<Button className="btn-facebook" block><span>facebook</span></Button>*/}
+                        {/*</Col>*/}
+                        {/*<Col xs="12" sm="6">*/}
+                            {/*<Button className="btn-twitter" block><span>twitter</span></Button>*/}
+                        {/*</Col>*/}
+                    {/*</Row>*/}
+                {/*</CardFooter>*/}
             </Card>
         </Col>
         )

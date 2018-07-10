@@ -12,6 +12,9 @@ import {
     RESET_PASSWORD_EMAIL_TOKEN_SENT,
     RESET_PASSWORD_EMAIL_TOKEN_SENT_SUCCESS,
     RESET_PASSWORD_EMAIL_TOKEN_SENT_FAIL,
+    REGISTER_REQUEST,
+    REGISTER_SUCCESS,
+    REGISTER_FAILURE,
 } from '../constants/appConstants';
 
 const initialState = {
@@ -118,6 +121,22 @@ export default (state = initialState, action) => {
           is_loading: false,
           reset_password_email_valid: false,
           reset_password_success: false,
+        }
+
+      case REGISTER_REQUEST:
+        return {
+         ...state,
+         registering: true,
+        }
+
+      case REGISTER_SUCCESS:
+        return {
+            ...state,
+        }
+
+      case REGISTER_FAILURE:
+        return {
+            ...state,
         }
   
       default:
